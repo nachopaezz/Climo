@@ -16,7 +16,7 @@ export default function Home() {
   useEffect(() => {
     const savedCities = localStorage.getItem('savedCities');
     if (savedCities) {
-      setCities(JSON.parse(savedCities));
+      setCities(JSON.parse(savedCities) as City[]);
     }
   }, []);
 
@@ -24,14 +24,14 @@ export default function Home() {
     localStorage.setItem('savedCities', JSON.stringify(cities));
   }, [cities]);
 
-  const handleAddCity = (city: City) => {
-    if (!cities.find(c => c.id === city.id)) {
+  const handleAddCity = (city: City): void => {
+    if (!cities.find((c: City) => c.id === city.id)) {
       setCities([...cities, city]);
     }
   };
 
-  const handleRemoveCity = (cityId: string) => {
-    setCities(cities.filter(city => city.id !== cityId));
+  const handleRemoveCity = (cityId: string): void => {
+    setCities(cities.filter((city: City) => city.id !== cityId));
   };
 
   return (
@@ -42,7 +42,7 @@ export default function Home() {
     >
       <Layout className={styles.layout}>
         <Header className={styles.header}>
-          <h1 className={styles.title}>ClimaApp</h1>
+          <h1 className={styles.title}>Climo</h1>
           <ThemeToggle isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
         </Header>
         <Content className={styles.content}>
@@ -52,4 +52,4 @@ export default function Home() {
       </Layout>
     </ConfigProvider>
   );
-} 
+}
