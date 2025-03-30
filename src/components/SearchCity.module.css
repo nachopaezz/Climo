@@ -1,0 +1,10 @@
+.searchContainer {
+  margin-bottom: 24px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.autoComplete {
+  width: 100%;
+} 
