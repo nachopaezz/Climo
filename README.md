@@ -16,6 +16,16 @@ Aplicación del clima desarrollada con React, Next.js y Ant Design que permite b
 - Interfaz moderna con Ant Design
 - Base de datos simulada con 50 ciudades del mundo
 
+## Nota sobre los datos 📝
+
+Esta aplicación actualmente utiliza datos simulados de 50 ciudades del mundo como ejemplo. En un entorno de producción, se recomienda integrar datos reales del clima utilizando APIs públicas como:
+- [OpenWeatherMap](https://openweathermap.org/api)
+- [WeatherAPI](https://www.weatherapi.com/)
+- [Tomorrow.io](https://www.tomorrow.io/)
+- [AccuWeather](https://developer.accuweather.com/)
+
+La estructura del proyecto está diseñada para facilitar la integración de cualquier fuente de datos real simplemente modificando el archivo `src/data/mockCities.ts`.
+
 ## Tecnologías Utilizadas 🛠️
 
 - React 18
