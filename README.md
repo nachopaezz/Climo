@@ -1,4 +1,4 @@
-# ClimaApp ☁️
+# Climo ☁️
 
 Aplicación del clima desarrollada con React, Next.js y Ant Design que permite buscar y visualizar el clima de diferentes ciudades del mundo.
 
@@ -60,11 +60,3 @@ npm run dev
 2. Selecciona una ciudad de las sugerencias
 3. La ciudad se agregará a tu lista con la información del clima
 4. Puedes eliminar ciudades haciendo clic en el ícono de eliminar
-
-## Contribuir 🤝
-
-Las contribuciones son bienvenidas. Para cambios importantes, por favor abre primero un issue para discutir qué te gustaría cambiar.
-
-## Licencia 📄
-
-[MIT](https://choosealicense.com/licenses/mit/)
